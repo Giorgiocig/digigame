@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/personalProject/Digi/style.css">
+    <script defer src="/personalProject/Digi/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="centered container" id="title"></h1>
+      <div class="row container container--mod">
+        <div>
+          <p class="current-label">Score</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+        <div class="">
+          <p class="current-label">Score</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2 class="textWinner centered">THE WINNER IS...</h2>
+      <div class="row container">
+        <section class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <div class="current">
+           
+            <p id="strength--1"></p>
+            <div id="imageContainer--1">
+            </div>     
+          </div>
+        </section>
+        <section class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <div class="current">
+            
+            <p id="strength--0"></p>
+          </div>
+          
+          <div id="imageContainer--0">
+          </div>
+        </section>
+      </div>
+      <div>
+        <div class="col container centered">
+          <input type="text" class="inputDigi">
+          <button type="submit" class="btn btn--get">Get your Digi</button>
+          <button type="submit" class="btn btn--battle">Battle</button>
+          <button type="submit" class="btn btn--restart">New Battle</button>
+          <button type="submit" class="btn btn--playAgain">Play Again</button>
+          <p class="message" ></p>      
+        <p>How to play</p>    
+          <li>1)Insert Digimon's name and click Get your Digi (andromon, patamon, Koromon, Sukamon...)</li>
+          <li>2)Click on Battle to see the winner (digimon with highest strenth wins)</li>
+          <li>3)Click on New battle 2 times to reset the battle</li>
+          <li>4)Click on Play again to reset the game</li>
+          <li>5)If something goes wrong just click on reset</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

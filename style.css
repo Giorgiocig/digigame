@@ -1,0 +1,145 @@
+/*font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Sedgwick Ave', cursive;
+*/
+
+:root {
+  --font-title: "Mochiy Pop P One", sans-serif;
+  --font-text: "Poppins", sans-serif;
+
+  --main-color: #f7cb4a;
+  --main-color-dev: #5f4b10;
+  --secondary-color: #064ec9;
+  --active: #644d0752;
+  --matchWin: #ffbc05e0;
+  --danger-color: #ff057ae0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  padding: 1em;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.diginame {
+  font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container--mod {
+  width: 59%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.player {
+  width: 30%;
+  padding: 1em;
+}
+
+.player--active {
+  background-color: peru;
+}
+
+.image {
+  width: 100%;
+}
+
+.digiimg {
+  border-radius: 50%;
+}
+
+#strength--1,
+#strength--0 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.col {
+  flex-direction: column;
+  display: flex;
+  width: 15%;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+
+.current-label,
+.current-score {
+  font-size: 1.5rem;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: var(--danger-color);
+  font-weight: bold;
+}
+
+.btn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #f7cb4a;
+  font-family: var(--font-text);
+  font-size: 0.9rem;
+  padding: 1em;
+  background-color: #064ec9;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  border: solid #337fed 1px;
+  background: #1e62d0;
+  background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -moz-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -ms-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -o-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -webkit-gradient(to bottom, #1e62d0, #3d94f6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.inputDigi {
+  padding: 0.5em;
+  font-size: 1rem;
+  border-width: 1px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
